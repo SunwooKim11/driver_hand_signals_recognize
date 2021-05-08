@@ -12,4 +12,5 @@ This project can detect 3 driver hand signals below:
 
 # Reference
 [1] mediapipe hands python solution: https://google.github.io/mediapipe/solutions/hands.html
+
 [2] Simple hand gesture recognizition project: https://gist.github.com/TheJLifeX/74958cc59db477a91837244ff598ef4a
