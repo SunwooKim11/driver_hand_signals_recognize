@@ -1,5 +1,6 @@
 # driver_hand_signals_recognize
-This project can detect 3 driver hand signals below:
+
+This project can detect 3 driver left_hand signals below:
 
   1. Thanks
   2. Go first (course concession)
