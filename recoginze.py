@@ -73,7 +73,7 @@ def hand_gesture(hand_landmarks):
       gesture = "Thank you"
   if ((OPEN_THUMB) and (not OPEN_INDEX_FINGER) and (not OPEN_MIDDLE_FINGER) and (not OPEN_RING_FINGER) and (
   OPEN_PINKY)):
-    gesture = "There is a pedesterian"
+    gesture = "There is someone in front of me"
 
 
     # if ((OPEN_THUMB) and (OPEN_INDEX_FINGER) and (OPEN_MIDDLE_FINGER) and (OPEN_RING_FINGER) and (OPEN_PINKY)):
