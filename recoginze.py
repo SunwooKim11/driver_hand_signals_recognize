@@ -3,6 +3,9 @@ import mediapipe as mp
 import math
 
 mp_hands = mp.solutions.hands
+#range (3pi/4 - pi/8, 3pi/4 + pi/8), (pi/4 - pi/8, pi/4 + pi/8)
+range1 = (math.tan(5*math.pi/8), math.tan(7*math.pi/8))
+range2 = (math.tan(math.pi/8), math.tan(3*math.pi/8))
 
 def hand_gesture(hand_landmarks):
   coeff = 1
@@ -67,7 +70,7 @@ def hand_gesture(hand_landmarks):
   gesture = "UNKNOWN"
   if(OPEN_INDEX_FINGER and OPEN_MIDDLE_FINGER and OPEN_RING_FINGER and OPEN_PINKY):
     m = d9_from_d0['y']/d9_from_d0['x']
-    if(math.tan(2*math.pi/3) < m and m < math.tan(5*math.pi/6)):
+    if((range1[0] < m and m < range1[1]) or (range2[0]< m <range2[1])):
       gesture = "Go first"
     else:
       gesture = "Thank you"
