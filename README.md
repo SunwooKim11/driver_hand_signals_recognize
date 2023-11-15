@@ -10,6 +10,9 @@ This project can detect 3 driver left_hand signals below:
 - python3
 - mediapipe
 - cv2
+# Youtube Video
+2021-1 차량지능기초 전반부 final project - 20203039 김선우
+https://youtu.be/hFE_pwendN4
 
 # Reference
 [1] mediapipe hands python solution: https://google.github.io/mediapipe/solutions/hands.html
